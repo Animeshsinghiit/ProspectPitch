@@ -9,10 +9,15 @@
 - **Talking Points**: Provide compelling talking points to pitch solutions in a hyper-personalized manner.
 - **Industry-Specific Insights**: Tailor messages according to industry trends and the prospect's recent business initiatives.
 
+## Streamlit App Look
+<img width="956" alt="pp_img1" src="https://github.com/user-attachments/assets/f515ee74-e3a6-49d4-855a-9e252f71ce63">
+
 ## Model Used
 This application utilizes the **Llama3-8b-8192** model for generating responses and insights, ensuring high-quality and relevant content.
 
 ## Requirements
 To use **ProspectPitch**, you will need:
 - A valid **GROQ key** for accessing the application functionalities.
+
+ 
 
