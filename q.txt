@@ -1,0 +1,131 @@
+Objective: Create a predictive intent score (1-10) for companies to determine their likelihood of requiring Tata Communications solutions in four main areas: Cloud Computing, Unified Communications, Security Solutions, and Networking Solutions.
+Data Requirements:
+1.	Firmographics: 
+o	Company Name
+o	Industry
+o	Employee Count (ranges: 50-100, 200-500, 500-1000)
+o	Revenue Range
+o	Number of Office Locations
+2.	Growth Initiatives: 
+o	Recent Acquisitions (Y/N)
+o	Geographic Expansion (Y/N)
+o	New Product Launches (Y/N)
+o	Partnerships (Y/N)
+3.	Technology Initiatives: 
+o	Cloud Adoption (Y/N)
+o	AI/ML Implementation (Y/N)
+o	Cybersecurity Investments (Y/N)
+o	IoT Deployments (Y/N)
+o	Digital Transformation Projects (Y/N)
+4.	Previous Interactions with Tata: 
+o	Existing Customer (Y/N)
+o	Past Sales Interactions (Y/N)
+o	Expressed Interest in Tata Solutions (Y/N)
+Output Format: A table with the following columns:
+1.	Company Name
+2.	Solution Area
+3.	Intent Score
+4.	Key Indicators
+Scoring Criteria:
+1.	Industry Relevance (3 points): 
+o	Cloud Computing, Unified Communications, Security Solutions: 
+	Pharmaceuticals, BFSI, BPO/Telecomm, MES, IT/ITES, E-commerce, Healthcare, Hospitality, Travel and Tourism
+o	Networking Solutions: 
+	Manufacturing, Pharmaceuticals, BFSI, BPO/Telecomm, MES, Edtech, IT/ITES, Food and Beverage, E-commerce, Healthcare, Hospitality, Travel and Tourism, ISPs
+2.	Employee Count (2 points): 
+o	Cloud Computing, Unified Communications: 500-1000
+o	Security Solutions: 200-500
+o	Networking Solutions: 50-100
+3.	Multiple Office Locations (1 point)
+4.	Growth Initiatives (1 point each, max 4 points): 
+o	Recent Acquisitions, Geographic Expansion, New Product Launches, Partnerships
+5.	Technology Initiatives (2 points each, max 10 points): 
+o	Cloud Adoption, AI/ML Implementation, Cybersecurity Investments, IoT Deployments, Digital Transformation Projects
+6.	Previous Interactions with Tata (2 points each, max 6 points): 
+o	Existing Customer
+o	Past Sales Interactions
+o	Expressed Interest in Tata Solutions
+Intent Score = Sum of points across all criteria (max 26 points) Normalized Intent Score = (Intent Score / 26) * 10, rounded to the nearest integer
+Solution Area: Determined by the category with the highest score based on industry relevance, employee count, technology initiatives, and previous interactions with Tata.
+Key Indicators: List the top 3 factors contributing to the intent score.
+
+
+
+
+2nd questions:
+
+Using the intent score analysis, reasoning, and company information provided, generate a set of 6-7 probing questions and a set of talking points for each company. The probing questions should aim to ascertain the company's need for the predicted solution area(s), while the talking points should pitch these solutions in a hyper-personalized manner based on the available information.
+Output the results in a tabular format with the following columns:
+1. Company Name
+2. Probing Questions
+3. Talking Points
+Ensure that the probing questions and talking points are tailored to each company's specific industry, growth initiatives, technology initiatives, and previous interactions with Tata Communications. Highlight how the recommended solutions can address their unique business needs and challenges.
+
+
+
+
+## 3rd questions
+
+Create a series of 3 hyper-personalized InMail messages for Dell to send to a prospective client on LinkedIn, based on the following guidelines:
+1.	Use the provided SI (Strategic Intelligence) document to extract key information about the prospect, including: 
+o	Recent business initiatives and challenges
+o	Technology stack and IT infrastructure
+o	Industry trends affecting the prospect
+o	Financial indicators and growth areas
+2.	Focus on Dell's NAS and SAN products: 
+o	Isilon NAS solutions (All-Flash, Hybrid, and Archive)
+o	Dell SAN solutions
+3.	For each InMail: 
+o	Craft an attention-grabbing subject line (max 60 characters) that hints at the message's value proposition
+o	Open with a personalized greeting and a hook directly related to the prospect's role or a specific challenge their company faces
+o	Write 2-3 concise paragraphs (max 50 words each) that: a) Demonstrate understanding of the prospect's situation b) Highlight how a specific Dell NAS or SAN product addresses their needs c) Tie the solution to a relevant use case or initiative mentioned in the SI document
+o	Include a clear, action-oriented CTA
+o	Close with a professional sign-off
+4.	InMail focus areas: 
+o	InMail 1: Address the prospect's most pressing data storage challenge, introducing the most relevant Dell NAS or SAN solution
+o	InMail 2: Highlight a secondary challenge or growth area, showcasing how another Dell NAS or SAN product can support their goals
+o	InMail 3: Focus on long-term value, discussing how Dell's ecosystem of NAS and SAN products can future-proof their storage infrastructure
+5.	Predictive product pitch and use cases: 
+o	For large-scale unstructured data management: Suggest Isilon NAS solutions
+o	For high-performance block-level storage: Recommend Dell SAN solutions
+o	For data-intensive operations or AI/ML initiatives: Propose Isilon All-Flash
+o	For cost-effective long-term data retention: Suggest Isilon Archive
+o	For unified storage needs: Recommend Isilon Hybrid
+6.	Industry trends to consider: 
+o	Rapid growth of unstructured data
+o	Adoption of AI and machine learning
+o	Shift towards hybrid and multi-cloud environments
+o	Increasing focus on data security and compliance
+o	Edge computing and IoT integration
+o	Data lake initiatives
+o	Sustainability and energy efficiency in IT
+7.	General guidelines: 
+o	Use a professional yet conversational tone suitable for LinkedIn
+o	Avoid technical jargon unless it's industry-specific and relevant
+o	Incorporate specific details from the SI document to demonstrate deep understanding of the prospect's business
+o	Keep the total InMail length under 150 words
+o	Ensure each InMail builds upon the previous one, creating a cohesive narrative
+o	Tailor the product recommendations to the prospect's industry, size, and specific needs
+8.	Value propositions to emphasize: 
+o	Massive scalability for growing data volumes
+o	High performance for demanding workloads
+o	Comprehensive data protection and security
+o	Seamless integration with existing systems and cloud environments
+o	Cost efficiency and improved storage utilization
+o	Advanced data management capabilities
+o	Future-proof design and technology
+9.	InMail style and engagement: 
+o	Keep the messages concise, engaging, and tailored to the LinkedIn platform
+o	Use hook lines to create urgency and relevance, such as: 
+	"See how industry leaders are revolutionizing their data storage"
+	"Don't let competitors outpace you with superior storage solutions"
+	"Unlock your company's data potential with Dell's cutting-edge storage"
+o	Incorporate these hook lines naturally into the message, either in the subject line or opening
+o	Use active voice and powerful verbs to maintain energy throughout the message
+o	Create a sense of exclusivity or insider knowledge when discussing industry trends or competitor actions
+10.	LinkedIn-specific considerations: 
+o	Mention any mutual connections or shared groups if applicable
+o	Reference any recent company news or LinkedIn posts by the prospect
+o	Offer to share relevant whitepapers, case studies, or invite to exclusive webinars
+o	Suggest connecting on LinkedIn as part of the CTA
+Remember, the goal is to create concise, engaging InMail messages that feel personalized and relevant to the prospect's LinkedIn profile and company situation. Demonstrate Dell's understanding of their unique challenges and position Dell's NAS and SAN solutions as critical tools for staying competitive in the prospect's industry. The InMails should inspire the prospect to engage further, whether through a reply, accepting a connection request, or agreeing to a call or meeting.
