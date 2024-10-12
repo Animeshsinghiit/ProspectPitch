@@ -1,0 +1,40 @@
+cookie:
+  expiry_days: 0
+  key: abcdy # Must be a string
+  name: abcd
+credentials:
+  usernames:
+    jump:
+      email: animesh.singh@dt.com
+      failed_login_attempts: 0 # Will be managed automatically
+      logged_in: False # Will be managed automatically
+      name: Tom
+      password: jump@123 # Will be hashed automatically
+      roles:
+      - admin
+      - editor
+      - viewer
+    dtree:
+      email: dt@dt.com
+      failed_login_attempts: 0 # Will be managed automatically
+      logged_in: False # Will be managed automatically
+      name: Animesh singh
+      password: qwerty # Will be hashed automatically
+      roles:
+      - viewer
+      - admin
+      - editor
+      - viewer
+oauth2:
+  google: # Follow instructions: https://developers.google.com/identity/protocols/oauth2
+    client_id: # To be filled
+    client_secret: # To be filled
+    redirect_uri: # URL to redirect to after OAuth2 authentication
+  microsoft: # Follow instructions: https://learn.microsoft.com/en-us/graph/auth-register-app-v2
+    client_id: # To be filled
+    client_secret: # To be filled
+    redirect_uri: # URL to redirect to after OAuth2 authentication
+    tenant_id: # To be filled
+pre-authorized:
+  emails:
+  - abc@gmail.com

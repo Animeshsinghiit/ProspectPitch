@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from llm_callers import get_inmails, get_intent_details, get_probing_questions, extract_inputs
-
+from st_auth import check_password,controller
 def display_output_with_formatting(output):
     
     st.markdown(f"## {output['company_name']}")
@@ -35,6 +35,20 @@ def display_inmails(output):
 
 
 def main():
+    login_status = check_password()
+
+    if not login_status:
+        st.stop()
+
+    if st.button("logout", key="1"):
+        logged_in_user = st.session_state.get("username", controller.get('logged_in_user'))
+        if logged_in_user:
+            st.write(f"Welcome, {logged_in_user}!")
+            st.session_state.clear()
+            controller.remove('login_status')
+            controller.remove('logged_in_user')
+            st.rerun()
+
     st.title("ProspectPitch")
     st.write("Focuses on pitching solutions to potential clients.")
 
