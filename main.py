@@ -3,22 +3,22 @@ import pandas as pd
 from llm_callers import get_inmails, get_intent_details, get_probing_questions, extract_inputs
 
 def display_output_with_formatting(output):
-    # Display the company name as a heading
+    
     st.markdown(f"## {output['company_name']}")
 
-    # Display the Probing Questions section
+    
     st.markdown("### Probing Questions")
     st.markdown("Here are some probing questions to uncover the company's needs:")
     
-    # Display each probing question as a bullet point
+    
     for question in output['probing_questions']:
         st.markdown(f"- {question}")
     
-    # Display the Talking Points section
+    
     st.markdown("### Talking Points")
     st.markdown("Here are some talking points to address the company's needs in a personalized manner:")
 
-    # Display each talking point as a bullet point
+    
     for point in output['talking_points']:
         st.markdown(f"- {point}")
 
